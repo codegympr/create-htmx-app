@@ -14,7 +14,6 @@ app.get('/components/:componentName', (req, res) => {
 
 // Add routes for specific paths (Update these as per your application logic)
 app.get('/', (req, res) => {
-    // Handle the about request
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 

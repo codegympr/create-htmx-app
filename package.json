@@ -1,11 +1,8 @@
 {
   "name": "new-htmx-app",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A starter template for web applications using htmx.",
   "main": "server.js",
-  "bin": {
-    "new-htmx-app": "./bin/new-htmx-app.js"
-  },
   "scripts": {
     "start": "node server.js"
   },

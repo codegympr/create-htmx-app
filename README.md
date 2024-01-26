@@ -22,4 +22,4 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
 You can start using `create-htmx-app` with the following command:
 
 ```bash
-npx create-htmx-app
+npx new-htmx-app [your-app-name]

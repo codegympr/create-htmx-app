@@ -1,13 +1,17 @@
 {
-  "name": "create-htmx-app",
-  "version": "1.0.0",
+  "name": "new-htmx-app",
+  "version": "1.0.1",
   "description": "A starter template for web applications using htmx.",
   "main": "server.js",
+  "bin": {
+    "new-htmx-app": "./bin/new-htmx-app.js"
+  },
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "htmx.org": "^1.9.10"
   },
   "author": "Code Gym 501(c)(3)",
   "license": "The Unlicense"

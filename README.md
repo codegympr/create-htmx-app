@@ -1,2 +1,3 @@
-# create-htmx-app
-CLI tool
+# create-htmx-app Template
+
+This is a starter template for htmx applications.

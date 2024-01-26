@@ -27,7 +27,7 @@ try {
   console.log('');
   console.log('We suggest that you begin by typing:');
   console.log(`  cd ${appName !== '.' ? appName : ''}`);
-  console.log('  npm start');
+  console.log('  npm i && npm start');
   console.log('');
 } catch (error) {
   console.error('Error creating new htmx app:', error);

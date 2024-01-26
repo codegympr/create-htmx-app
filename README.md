@@ -23,6 +23,7 @@ You can start using `create-htmx-app` with the following command:
 
 ```bash
 npx new-htmx-app [your-app-name]
+```
 
 ## Support Us
 

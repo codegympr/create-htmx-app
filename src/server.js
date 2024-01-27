@@ -1,10 +1,13 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
 // Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname)));
 
 // Dynamic route for components
 app.get('/components/:componentName', (req, res) => {

@@ -9,12 +9,12 @@ app.use(express.static(path.join(__dirname, 'src')));
 // Dynamic route for components
 app.get('/components/:componentName', (req, res) => {
     const componentName = req.params.componentName;
-    res.sendFile(path.join(__dirname, 'src', 'components', componentName));
+    res.sendFile(path.join(__dirname, 'components', componentName));
 });
 
 // Add routes for specific paths (Update these as per your application logic)
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/about', (req, res) => {

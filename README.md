@@ -13,7 +13,7 @@ Prerequisites: Ensure you have Node.js and npm installed.
 To install Create HTMX App, run:
 
 ```
-npm install -g create-htmx-app
+npm install -g new-htmx-app
 ```
 
 ## Usage

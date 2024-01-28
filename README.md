@@ -1,5 +1,4 @@
 ## Create HTMX App
-bash
 ```
 npx new-htmx-app your-project-name
 ```
@@ -11,21 +10,18 @@ Prerequisites: Ensure you have Node.js and npm installed.
 
 To install Create HTMX App, run:
 
-bash
 ```
 npm install -g create-htmx-app
 ```
 
 ## Usage
 To create a new project, simply run:
-
-bash
 ```
 new-htmx-app my-project
 ```
 
 Navigate into your project folder to start working on your app.
-bash```
+```
 cd my-project
 npm start
 ```

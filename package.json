@@ -3,7 +3,9 @@
   "version": "1.0.18",
   "description": "A starter template for web applications using htmx.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -11,5 +13,8 @@
   },
   "type": "module",
   "author": "Code Gym 501(c)(3)",
-  "license": "The Unlicense"
+  "license": "The Unlicense",
+  "devDependencies": {
+    "cypress": "^13.6.3"
+  }
 }

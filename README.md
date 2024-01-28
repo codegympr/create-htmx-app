@@ -2,6 +2,8 @@
 ```
 npx new-htmx-app your-project-name
 ```
+[![End-to-End Tests with Cypress](https://github.com/codegympr/create-htmx-app/actions/workflows/test.yml/badge.svg)](https://github.com/codegympr/create-htmx-app/actions/workflows/test.yml)
+
 ## Introduction
 Create HTMX App is a CLI tool designed to kickstart front-end web projects using htmx. It streamlines the setup process, providing a pre-configured environment with htmx for dynamic, AJAX-driven content. This tool is perfect for developers looking to leverage htmx's simplicity and power without the overhead of manual configuration.
 

@@ -1,10 +1,10 @@
 document.addEventListener('htmx:load', () => {
     const modal = document.getElementById('modal-container');
     
-    const closeButton = modal.querySelector('.close-button');
+    const closeButton = modal?.querySelector('.close-button');
         
 
-    closeButton.addEventListener('click', () => {
+    closeButton?.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 });

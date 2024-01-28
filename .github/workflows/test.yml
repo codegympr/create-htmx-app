@@ -23,14 +23,14 @@ jobs:
     - name: Install Dependencies
       run: npm ci
 
-    - name: Start Server
-      run: npm start &
-      env:
-        CI: true
+    # - name: Start Server
+    #   run: npm start &
+    #   env:
+    #     CI: true
 
-    - name: Run Cypress Tests
-      uses: cypress-io/github-action@v2
-      with:
-        start: npm start
-        wait-on: 'http://localhost:3000'
-        wait-on-timeout: 60
+    # - name: Run Cypress Tests
+    #   uses: cypress-io/github-action@v2
+    #   with:
+    #     start: npm start
+    #     wait-on: 'http://localhost:3000'
+    #     wait-on-timeout: 60

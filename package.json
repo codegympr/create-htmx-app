@@ -16,5 +16,11 @@
   "license": "The Unlicense",
   "devDependencies": {
     "cypress": "^13.6.3"
-  }
+  },
+  "funding": "https://github.com/chalk/chalk?sponsor=1",
+  "keywords": [
+    "htmx",
+    "express",
+    "cypress"
+  ]
 }

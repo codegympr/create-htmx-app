@@ -11,8 +11,5 @@
   },
   "type": "module",
   "author": "Code Gym 501(c)(3)",
-  "license": "The Unlicense",
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
-  }
+  "license": "The Unlicense"
 }

@@ -16,5 +16,11 @@
   "license": "The Unlicense",
   "devDependencies": {
     "cypress": "^13.6.3"
-  }
+  },
+  "funding": "https://github.com/codegympr/create-htmx-app?sponsor=1",
+  "keywords": [
+    "htmx",
+    "express",
+    "cypress"
+  ]
 }

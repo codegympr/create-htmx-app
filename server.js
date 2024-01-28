@@ -6,8 +6,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
-// Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname)));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'src')));
+
+
 
 // Dynamic route for components
 app.get('/components/:componentName', (req, res) => {
@@ -15,14 +17,14 @@ app.get('/components/:componentName', (req, res) => {
     res.sendFile(path.join(__dirname, 'components', componentName));
 });
 
-// Add routes for specific paths (Update these as per your application logic)
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+// // Serve index.html for all other routes for SPA
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
 
 app.get('/about', (req, res) => {
     // Handle the about request
-    res.send('About page content');
+    res.sendFile(path.join(__dirname, 'src', 'components', 'about.html'));
 });
 
 app.get('/contact', (req, res) => {

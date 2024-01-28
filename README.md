@@ -1,31 +1,43 @@
-# create-htmx-app
-
-Create htmx apps with no build configuration.
-
+## Create HTMX App
+bash
+```
+npx new-htmx-app your-project-name
+```
 ## Introduction
-
-`create-htmx-app` allows you to create a new front-end web application that leverages htmx for dynamic content without writing any server-side code.
-
-## Features
-
-- Pre-configured htmx for AJAX capabilities.
-- Sample components like a navigation bar, footer, and modal.
-- Basic styling with CSS.
-- An example of integrating htmx with a simple Node.js server.
-
-## Prerequisites
-
-Before you begin, ensure you have Node.js and npm installed on your machine.
+Create HTMX App is a CLI tool designed to kickstart front-end web projects using htmx. It streamlines the setup process, providing a pre-configured environment with htmx for dynamic, AJAX-driven content. This tool is perfect for developers looking to leverage htmx's simplicity and power without the overhead of manual configuration.
 
 ## Installation
+Prerequisites: Ensure you have Node.js and npm installed.
 
-You can start using `create-htmx-app` with the following command:
+To install Create HTMX App, run:
 
-```bash
-npx new-htmx-app [your-app-name]
+bash
+```
+npm install -g create-htmx-app
 ```
 
-## Support Us
+## Usage
+To create a new project, simply run:
 
-[![Patreon](https://cloud.githubusercontent.com/assets/8225057/5990484/70413560-a9ab-11e4-8942-1a63607c0b00.png)](http://www.patreon.com/codegympr)
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=MRRELNH4X4H3Y)
+bash
+```
+new-htmx-app my-project
+```
+
+Navigate into your project folder to start working on your app.
+bash```
+cd my-project
+npm start
+```
+
+
+## Contributing
+We welcome contributions to make Create HTMX App better. Please feel free to submit issues, feature requests, and pull requests through the GitHub repository.
+
+## Guidelines:
+
+For pull requests, please describe your changes clearly.
+Adhere to existing code style and conventions.
+
+## License
+This project is released under the Unlicense, allowing free use, modification, and distribution.

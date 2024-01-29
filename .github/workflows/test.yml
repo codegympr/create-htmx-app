@@ -23,8 +23,13 @@ jobs:
     - name: Install Dependencies
       run: npm ci
 
-    - name: Start Server
-      run: npm start &
+    - name: Start Backend Server
+      run: npm run backend &
+      env:
+        CI: true
+
+    - name: Start Frontend Server
+      run: npm run frontend &
       env:
         CI: true
 

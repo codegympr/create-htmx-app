@@ -6,8 +6,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
+
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join('src')));
 
 
 
@@ -19,7 +20,7 @@ app.get('/components/:componentName', (req, res) => {
 
 app.get('/about', (req, res) => {
     // Handle the about request
-    res.sendFile(path.join(__dirname, 'src', 'components', 'about.html'));
+    res.sendFile(path.join(__dirname, 'components', 'about.html'));
 });
 
 app.get('/contact', (req, res) => {

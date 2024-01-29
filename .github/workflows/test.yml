@@ -24,7 +24,7 @@ jobs:
       run: npm ci
 
     - name: Start Backend Server
-      run: npm run backend &
+      run: npm start &
       env:
         CI: true
 
@@ -36,5 +36,5 @@ jobs:
     - name: Run Cypress Tests
       uses: cypress-io/github-action@v6
       with:
-        wait-on: 'http://localhost:8080/'
+        wait-on: 'http://localhost:8080'
         wait-on-timeout: 60

@@ -1,3 +1,6 @@
+import 'htmx.org';
+import '../styles/main.css';
+
 document.addEventListener('htmx:load', () => {
     const modal = document.getElementById('modal-container');
     

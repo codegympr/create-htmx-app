@@ -1,16 +1,35 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import webpack from "webpack";
+import webpackDevMiddleware from "webpack-dev-middleware";
+import webpackHotMiddleware from "webpack-hot-middleware";
+import config from "../webpack.config.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
-// Serve static files
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "dist")));
+const compiler = webpack(config);
+
+const setupWebpackHotMiddleware = async () => {
+  app.use(
+    webpackHotMiddleware(compiler, {
+      path: "/__webpack_hmr",
+    })
+  );
+};
+
+if (process.env.NODE_ENV !== "production") {
+  app.use(
+    webpackDevMiddleware(compiler, {
+      publicPath: config.output.publicPath,
+    })
+  );
+
+  setupWebpackHotMiddleware();
 } else {
-  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(path.join(__dirname, "dist")));
 }
 
 // Dynamic route for components

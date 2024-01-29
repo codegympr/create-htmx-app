@@ -29,8 +29,14 @@ new-htmx-app my-project
 Navigate into your project folder to start working on your app.
 ```
 cd my-project
-npm start
+npm run backend
 ```
+
+Separate terminal.
+```
+npm run frontend
+```
+
 
 
 ## Contributing

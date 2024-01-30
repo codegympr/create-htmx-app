@@ -27,13 +27,12 @@ jobs:
       run: npm run build
       env:
         CI: true
-        
+
     - name: Start Backend Server
       run: npm start &
       env:
         CI: true
         NODE_ENV: production
-
 
     - name: Run Cypress Tests
       uses: cypress-io/github-action@v6

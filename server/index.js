@@ -29,7 +29,7 @@ if (process.env.NODE_ENV !== "production") {
 
   setupWebpackHotMiddleware();
 } else {
-  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(path.join("public")));
 }
 
 // Dynamic route for components

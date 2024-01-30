@@ -27,15 +27,15 @@ jobs:
       run: npm start &
       env:
         CI: true
-        NODE_ENV: development
+        NODE_ENV: production
 
     - name: Build FrontEnd Client
-      run: npm run frontend &
+      run: npm run build
       env:
         CI: true
 
     - name: Run Cypress Tests
       uses: cypress-io/github-action@v6
       with:
-        wait-on: 'http://localhost:8080'
+        wait-on: 'http://localhost:3000'
         wait-on-timeout: 60

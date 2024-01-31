@@ -1,0 +1,10 @@
+<div class="main-content" hx-target=".main-content" hx-swap="outerHTML">
+    <!-- Your main content goes here -->
+    <h1>Hello, htmx</h1>
+    <div hx-get="https://jsonplaceholder.typicode.com/posts/1" hx-trigger="load">
+        <h2 hx-swap="innerHTML:title">Loading...</h2>
+        <p hx-swap="innerHTML:body">Loading...</p>
+    </div>
+
+
+</div>

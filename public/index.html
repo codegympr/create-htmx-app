@@ -9,6 +9,8 @@
         <main id="content" hx-get="components/main-content.html" hx-trigger="load"></main>
         <footer hx-get="components/footer.html" hx-trigger="load"></footer>
         <div hx-get="components/modal.html" hx-trigger="load" id="modal-container"></div>
-        <script src="bundle.js"></script>
+        
+        <!-- Script source is set to the root, assuming 'bundle.js' is in the 'dist' directory served statically -->
+        <script src="/bundle.frontend.js"></script>
     </body>
 </html>

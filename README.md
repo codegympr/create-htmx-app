@@ -3,9 +3,9 @@
 [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=MRRELNH4X4H3Y)
 
 ## Create HTMX App
-
+```
 npx new-htmx-app your-project-name
-
+```
 [![End-to-End Tests with Cypress](https://github.com/codegympr/create-htmx-app/actions/workflows/test.yml/badge.svg)](https://github.com/codegympr/create-htmx-app/actions/workflows/test.yml)
 
 ## Introduction
@@ -17,24 +17,23 @@ Create HTMX App is a CLI tool designed to kickstart front-end web projects using
 Prerequisites: Ensure you have Node.js and npm installed.
 
 To install Create HTMX App, run:
-
+```
 npm install -g new-htmx-app
-
+```
 ## Usage
 
 To create a new project, simply run:
-
+```
 new-htmx-app your-project-name
-
+```
 Navigate into your project folder to start working on your app.
-
+```
 cd your-project-name
-
+```
 To start your development environment, run:
-
+```
 npm run dev
-
-This command replaces the previous `npm start` and is tailored to provide a more efficient development workflow with both backend and frontend services running concurrently.
+```
 
 ## Contributing
 
